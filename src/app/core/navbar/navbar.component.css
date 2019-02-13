@@ -1,0 +1,51 @@
+
+/* menu do site */
+.menu {
+	height:10%;
+	width:100%;
+	margin-top:0px;
+	margin-left: 30px;
+	margin-right:0px;
+	margin-bottom:0px;
+
+}
+
+.menu ul {
+	height:20px;
+	width:600px;
+	border-radius: 50px;
+}
+
+.menu li {
+	display:inline
+}
+
+.menu ul li a {
+	text-shadow:0 1px 0 black;
+	color:white;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-decoration:none;
+	float: left;
+	padding: 0px 25px;
+}
+
+.menu ul li a:hover{
+	background: white;
+	border-radius: 50px ;
+	color:#116fbf;
+
+}
+.navBar{
+background-color: #116fbf;
+padding: 1px 0px;
+width: 600px;
+margin-left: 340px;
+}
+
+ /* fim do menu */
+
+
+
+
+
+

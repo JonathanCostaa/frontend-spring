@@ -1,0 +1,28 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <h1>Atualizar Funcionario</h1>
+    </div>
+</div>
+
+<div class="contain">
+
+<form> <br>
+
+    <div >
+        <label >Nome:</label>
+        <input pInputText type="text"  name="nome"  class="form-control"  ngModel  required >
+    </div><br>
+
+    <div class="form-group">
+      <label >Cargo:</label>
+  <select class="form-control" >
+    <option value="">Selecione</option>
+    <option >Front-end</option>
+    <option >back-end</option>
+  </select>
+</div> <br>
+
+     <p-button type="submit" (click)="alterar()" label="Atualizar"></p-button>
+</form>
+
+</div>

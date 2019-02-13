@@ -1,0 +1,41 @@
+
+ <!--The content below is only a placeholder and can be replaced.-->
+ <div class="ui-g">
+
+    <div class="ui-g-12">
+       <h1>Cadastro de Contatos</h1>
+    </div>
+
+    <div class="ui-g-12">
+        <h2>Buscando Contatos</h2>
+    </div>
+
+<div class="tabela">
+
+  <div class="ui-g-9">
+      <p-table [value]="contatos" [paginator]="true" [rows]="3">
+          <ng-template pTemplate="header">
+              <tr>
+                  <th>Email</th>
+                  <th>Telefone</th>
+                  <th>Ações</th>
+              </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-contato>
+              <tr>
+                  <td>{{contato.email}}</td>
+                  <td>{{contato.telefone}}</td>
+                  <td>
+                    <a pButton icon="pi pi-pencil" routerLink="/Contatos/atualizar" pTooltip="Editar" tooltipPosition="top"></a>
+                    <button class="ui-button-danger" pButton icon="pi pi-trash" (click)="excluir(contato.id)"  pTooltip="Excluir" tooltipPosition="top"></button></td>
+              </tr>
+          </ng-template>
+      </p-table>
+  </div>
+</div>
+
+  <div class="ui-g-12">
+      <button pButton type="button" routerLink="/Contatos/novo" label="Novo Contato"></button>
+  </div>
+
+</div>

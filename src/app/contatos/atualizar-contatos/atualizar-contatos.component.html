@@ -1,0 +1,30 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <h1>Atualizar Contato</h1>
+    </div>
+</div>
+
+<div *ngIf="usuarioForm.invalid" class="alert alert-danger">
+  Preencha todos os campos corretamente.
+</div>
+
+<div class="contain">
+
+  <form  #usuarioForm="ngForm" (ng-Submit)="alterar(usuarioForm)"> <br>
+
+    <div >
+        <label >Email:</label>
+        <input pInputText type="text"  name="email"
+         class="form-control" [(ngModel)]="contato.email"  required email>
+    </div><br>
+
+    <div >
+        <label >Telefone:</label>
+        <input pInputText type="text"   name="telefone"
+         class="form-control" [(ngModel)]="contato.telefone"  required>
+    </div> <br>
+
+     <p-button [disabled]="!usuarioForm.valid" type="submit" (click)="alterar()" label="Alterar"></p-button>
+</form>
+
+</div>

@@ -1,0 +1,43 @@
+
+body{
+text-align: center;
+color: black;
+}
+
+h2{
+  color:#116fbf;
+}
+
+.col-valor{
+  width:90px;
+  text-align: center;
+}
+
+.contain{
+background-color: grey;
+color: aliceblue;
+width:300px ;
+height: 150px;
+margin-left: 480px;
+}
+
+.contai{
+  background-color: grey;
+  color: aliceblue;
+  width:300px ;
+  height: 220px;
+  margin-left: 480px;
+  }
+
+.tabela{
+
+  margin-left: 260px;
+}
+
+.tabelaa{
+
+  margin-left: 250px;
+}
+
+
+

@@ -1,0 +1,37 @@
+
+ <!--The content below is only a placeholder and can be replaced.-->
+ <div class="ui-g">
+
+  <div class="ui-g-12">
+      <h1>Cadastro de Funcionarios/Contatos</h1>
+  </div>
+
+  <div class="ui-g-12">
+      <h2>Buscando Contatos do Funcionario</h2>
+  </div>
+
+<div class="tabelaa">
+  <div class="ui-g-9" >
+      <p-dataTable [value]="funcionariosContatos" [paginator]="true" [rows]="3">
+
+          <p-column  field="nome" header="Nome" ></p-column>
+          <p-column  field="cargo" header="Cargo" ></p-column>
+          <p-column  field="email" header="Email" ></p-column>
+          <p-column  field="telefone" header="Telefone" ></p-column>
+
+          <p-column styleClass="col-valor">
+              <ng-template pTemplate="body">
+                  <a pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top"></a>
+                  <button class="ui-button-danger" pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top"></button>
+              </ng-template>
+          </p-column>
+
+      </p-dataTable>
+  </div>
+</div>
+
+  <div class="ui-g-12">
+      <button pButton type="button" routerLink="/Funcionarios/Contatos/novo"  label="Novo Funcionario-contatos"></button>
+  </div>
+
+</div>

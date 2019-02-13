@@ -1,0 +1,31 @@
+<div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Novo Funcionario</h1>
+      </div>
+</div>
+
+<div *ngIf="usuarioForm.invalid" class="alert alert-danger">
+  Preencha todos os campos corretamente.
+</div>
+
+<div class="contain">
+
+  <form #usuarioForm="ngForm" (ng-Submit)="salvar(usuarioForm)"> <br>
+      <div>
+          <label >Nome:</label>
+          <input pInputText type="text" name="nome"
+           class="form-control" [(ngModel)]="funcionario.nome"  required>
+      </div><br>
+
+      <div class="form-group">
+            <label >Cargo:</label>
+        <select class="form-control" type="text" name="nome" [(ngModel)]="funcionario.cargo" required >
+          <option value="">Selecione</option>
+          <option >Front-end</option>
+          <option >back-end</option>
+        </select>
+      </div> <br>
+       <p-button [disabled]="!usuarioForm.valid" type="submit" (click)="salvar()" label="Salvar" ></p-button>
+  </form>
+
+</div>
